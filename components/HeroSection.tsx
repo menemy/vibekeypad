@@ -120,9 +120,15 @@ export default function HeroSection() {
     <section ref={sectionRef} className="hero-sequence relative min-h-[500vh]">
       <div ref={stickyRef} className="hero-sticky sticky top-0 h-screen flex items-center justify-center overflow-hidden bg-[#e8e8e8]">
         <div className="hero-content text-center max-w-5xl px-12">
-          <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.07] tracking-[-0.02em] m-0 text-fg">
-            ⌨️ 6‑key DIY AI coding keypad
-          </h1>
+          <div className="mb-8 mt-16">
+            <Image
+              src="/keypad.png"
+              alt="VibeKeypad"
+              width={600}
+              height={400}
+              className="mx-auto w-auto max-w-md"
+            />
+          </div>
           <p className="hero-subtitle text-2xl md:text-3xl lg:text-4xl font-semibold text-muted mt-6">
             ✨ The missing piece for AI coding.
           </p>
