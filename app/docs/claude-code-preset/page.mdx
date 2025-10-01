@@ -1,0 +1,189 @@
+# Claude Code Preset — Optimized for Real Workflow
+
+This preset is based on extensive real-world usage and focuses on the **most frequent operations** when working on coding tasks with Claude Code.
+
+## Why This Layout?
+
+After prolonged use, these are the actions you'll perform most often during a coding session:
+- **Approve** suggestions quickly
+- **Approve without asking again** for repetitive changes
+- **Reject** incorrect suggestions
+- **Stop** long-running operations (or exit with double press)
+- **View full output** when you need details
+- **Voice dictation** for complex explanations
+
+## Key Mappings
+
+| Key | Icon | Action | Shortcut |
+|-----|------|--------|----------|
+| **Key 1** | 🤙🏻 | Accept suggestion | `Enter` |
+| **Key 2** | ⏭ | Accept all / Skip | `2` |
+| **Key 3** | 🙅‍♂️ | Reject / Cancel | `3 + ESC` |
+| **Key 4** | ❌ | Stop / Exit (double press) | `Ctrl + ESC + C` |
+| **Key 5** | 👀 | Show full output | `Ctrl + O` |
+| **Key 6** | 🎤︎ | Voice dictation | `Win + D` (or custom) |
+
+## Detailed Configuration
+
+### Key 1: Accept (🤙🏻)
+**Shortcut:** `Enter`
+
+The most common action — accepting Claude's suggestion. Mapped to Enter for instant approval.
+
+```
+Key: Enter
+When: suggestionVisible
+```
+
+### Key 2: Accept All / Next (⏭)
+**Shortcut:** `2`
+
+When Claude suggests multiple similar changes, approve them all without reviewing each one individually. Huge time saver for repetitive edits.
+
+```
+Key: 2
+When: multipleChanges
+```
+
+### Key 3: Reject (🙅‍♂️)
+**Shortcut:** `3 + ESC`
+
+Decline the current suggestion and keep your code as-is. Use when Claude's suggestion isn't quite right.
+
+```
+Key: 3, ESC
+When: suggestionVisible
+```
+
+### Key 4: Stop / Exit (❌)
+**Shortcut:** `Ctrl + ESC + C`
+
+Stop Claude mid-generation when you realize it's going in the wrong direction. **Press twice** to exit the current operation completely.
+
+```
+Key: Ctrl + ESC + C
+Double press: Exit operation
+```
+
+### Key 5: Full Output (👀)
+**Shortcut:** `Ctrl + O`
+
+Open the detailed log/output panel when you need to see what Claude is actually doing behind the scenes.
+
+```
+Key: Ctrl + O
+Opens: Output panel
+```
+
+### Key 6: Voice Input (🎤︎)
+**Shortcut:** `Cmd + D` (Windows) or custom
+
+Start voice dictation for complex explanations. Works with:
+- **Built-in system dictation** (Windows: Win+H, macOS: 🎤︎)
+- **MacWhisper** — Fast local transcription
+- **Whispr Flow** — Seamless voice-to-text
+
+```
+Key: Cmd + D (or your preferred voice tool shortcut)
+```
+
+## Setup Instructions
+
+### 1. Configure in SayoDevice
+
+1. Open [https://sayodevice.com/](https://sayodevice.com/) in Chrome
+2. Connect your VibeKeypad
+3. Map each key according to the table above
+4. **Save** configuration
+
+### 2. Print Icon Sheet
+
+Download and print the icons:
+
+```
+🤙🏻  ⏭  🙅‍♂️
+❌  👀  🎤︎
+```
+
+Size: **12×12mm** per icon for standard keycaps
+
+### 3. Configure Voice Input (Optional)
+
+#### macOS Built-in
+Press **Fn Fn** (double tap Function key)
+
+#### Windows Built-in
+Press **Win + H**
+
+#### MacWhisper (Recommended for macOS)
+1. Install [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper)
+2. Set global hotkey to `Cmd + D` (or your preference)
+3. Configure to type directly into active window
+
+#### Whispr Flow
+1. Install from [whisprflow.com](https://whisprflow.com)
+2. Set hotkey in preferences
+3. Enable "Auto-paste" mode
+
+## Usage Patterns
+
+### Quick Iteration Loop
+
+When Claude is making repetitive changes:
+
+1. **🤙🏻** Accept first suggestion → review result
+2. **⏭** Accept all remaining similar changes
+3. **👀** Check full output to verify
+4. Continue coding
+
+### Error Recovery
+
+When something goes wrong:
+
+1. **❌** Stop generation immediately
+2. **🙅‍♂️** Reject incorrect changes
+3. **🎤︎** Explain what you actually want via voice
+4. **🤙🏻** Accept the corrected suggestion
+
+### Complex Feature Work
+
+When explaining a complex feature:
+
+1. **🎤︎** Dictate the full context and requirements
+2. Wait for Claude to generate
+3. **👀** Review full output and reasoning
+4. **🤙🏻** or **🙅‍♂️** depending on quality
+5. Iterate if needed
+
+## Why These Icons?
+
+- **🤙🏻** (Shaka) — Universal "all good" gesture
+- **⏭** (Fast forward) — Skip ahead quickly
+- **🙅‍♂️** (Person gesturing NO) — Clear rejection
+- **❌** (Cross mark) — Stop/cancel
+- **👀** (Eyes) — Look at details
+- **🎤︎** (Microphone) — Voice input
+
+These are instantly recognizable and map naturally to their actions.
+
+## Pro Tips
+
+### Double Tap Stop
+Tap **❌** twice quickly to completely exit the current Claude operation and return to normal editing.
+
+### Voice for Complex Context
+Use **🎤︎** when you need to explain:
+- Multi-file refactoring requirements
+- Business logic with nuances
+- Error descriptions with stack traces
+- Design decisions and trade-offs
+
+Voice is **much faster** than typing for these scenarios.
+
+### Accept All for Formatting
+When Claude is applying consistent formatting changes (like adding types, fixing indentation, etc.), use **⏭** to approve all changes at once instead of reviewing each file.
+
+### Full Output for Debugging
+When Claude's suggestions seem off, hit **👀** to see its reasoning. Often you'll spot where it misunderstood your intent.
+
+### Different Editors
