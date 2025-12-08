@@ -28,4 +28,27 @@
     color: var(--fg);
     overflow-x: hidden;
   }
+
+  /* Prose table styles */
+  .prose table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .prose th,
+  .prose td {
+    border: 1px solid var(--line);
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  .prose th {
+    background: rgba(0, 0, 0, 0.03);
+    font-weight: 600;
+  }
+
+  .prose tr:hover {
+    background: rgba(0, 0, 0, 0.02);
+  }
 }

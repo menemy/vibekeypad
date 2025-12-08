@@ -1,0 +1,161 @@
+# Cursor Agent Preset
+
+This preset is optimized for working with Cursor Agent mode, focusing on the core actions you need when reviewing and applying AI-generated changes.
+
+## Key Mappings
+
+| Key | Icon | Action | Shortcut |
+|-----|------|--------|----------|
+| **Key 1** | ✅ | Apply change | `Enter` |
+| **Key 2** | ⏭ | Apply and add to Allowlist | `Shift + Enter` |
+| **Key 3** | 🙅‍♂️ | Skip | `ESC` |
+| **Key 4** | ❌ | Cancel operation | `Ctrl + C` |
+| **Key 5** | 💭 | Agent → Plan → Ask | `Win + .` |
+| **Key 6** | 🎤 | Start dictation | `Shift + Win + Space` |
+
+## Detailed Configuration
+
+### Key 1: Apply (✅)
+**Shortcut:** `Enter`
+
+Accept and apply the current suggested change. This is your primary action when Cursor Agent proposes a modification you agree with.
+
+```
+Key: Enter
+Action: Apply suggested change
+```
+
+### Key 2: Apply and Allowlist (⏭)
+**Shortcut:** `Shift + Enter`
+
+Apply the change and add this type of modification to the allowlist. Future similar changes will be applied automatically without asking for confirmation.
+
+```
+Key: Shift + Enter
+Action: Apply and trust this change type
+```
+
+### Key 3: Skip (🙅‍♂️)
+**Shortcut:** `ESC`
+
+Skip the current suggestion without applying it. Use when the proposed change is not what you want.
+
+```
+Key: ESC
+Action: Skip current suggestion
+```
+
+### Key 4: Cancel (❌)
+**Shortcut:** `Ctrl + C`
+
+Cancel the current operation. Use when you want to stop the agent mid-generation or abort an ongoing task.
+
+```
+Key: Ctrl + C
+Action: Cancel current operation
+```
+
+### Key 5: Mode Toggle (💭)
+**Shortcut:** `Win + .`
+
+Cycle through Cursor modes: Agent → Plan → Ask. Quickly switch between different AI interaction styles.
+
+```
+Key: Win + .
+Action: Toggle Agent/Plan/Ask mode
+```
+
+### Key 6: Dictation (🎤)
+**Shortcut:** `Shift + Win + Space`
+
+Start voice dictation for hands-free input. Great for explaining complex requirements or describing bugs.
+
+```
+Key: Shift + Win + Space
+Action: Start voice input
+```
+
+## Setup Instructions
+
+### 1. Configure in SayoDevice
+
+1. Open [https://sayodevice.com/](https://sayodevice.com/) in Chrome
+2. Connect your VibeKeypad
+3. Map the keys:
+   - Key 1 → `Enter`
+   - Key 2 → `Shift + Enter`
+   - Key 3 → `ESC`
+   - Key 4 → `Ctrl + C`
+   - Key 5 → `Win + .`
+   - Key 6 → `Shift + Win + Space`
+4. **Save** configuration
+
+### 2. Download Files
+
+- **[Download Config (.sayobak)](../presets/cursor_agent.sayobak)** — Import directly to SayoDevice
+- **[Print Icons (HTML)](../presets/icons-cursor-agent.html)** — 12×12mm ready to print
+
+## Usage Patterns
+
+### Quick Review Flow
+
+When Cursor Agent suggests changes:
+
+1. Review the proposed change
+2. **✅** Apply if it looks good
+3. **⏭** Apply and allowlist for repetitive trusted changes
+4. **🙅‍♂️** Skip if you want to handle it differently
+5. **❌** Cancel if the agent is going in the wrong direction
+
+### Building Trust with Allowlist
+
+Use **⏭** (Apply and Allowlist) for:
+- Formatting changes you always accept
+- Import organization
+- Type annotations
+- Code style fixes
+
+Once allowlisted, these changes apply automatically, speeding up your workflow.
+
+### Mode Switching
+
+Use **💭** to quickly switch between:
+- **Agent** — Full autonomous mode
+- **Plan** — See the plan before execution
+- **Ask** — Simple Q&A mode
+
+### Voice-Driven Development
+
+1. Press **🎤** to start dictation
+2. Describe what you want to build or fix
+3. Let the agent generate the solution
+4. Review and apply with **✅** or **⏭**
+
+## Why These Icons?
+
+- **✅** (Check mark) — Approve and apply
+- **⏭** (Next track) — Apply and move forward automatically
+- **🙅‍♂️** (Person gesturing NO) — Skip past this one
+- **❌** (Cross mark) — Stop/cancel
+- **💭** (Thought bubble) — Switch thinking mode
+- **🎤** (Microphone) — Voice input
+
+## Pro Tips
+
+### Batch Similar Changes
+When Cursor suggests multiple similar changes (like adding types to function parameters), use **⏭** on the first one. The rest will apply automatically.
+
+### Review Before Allowlist
+Only use **⏭** when you are confident about the change pattern. Once allowlisted, similar changes skip the review step entirely.
+
+### Quick Rejection
+**🙅‍♂️** (Skip) is faster than clicking with the mouse. Keep your hands on the keypad for maximum flow.
+
+### Voice for Context
+Use **🎤** when you need to explain:
+- Complex refactoring requirements
+- Bug descriptions with context
+- Feature specifications
+- Code review feedback
+
+Voice is much faster than typing for detailed explanations.

@@ -17,6 +17,13 @@ export default function DocsIndex() {
       featured: true,
     },
     {
+      title: 'Cursor Agent Preset',
+      description: 'Apply, skip, allowlist changes and switch modes. Optimized for Cursor Agent workflow.',
+      href: '/docs/cursor-agent-preset',
+      icon: '🖱️',
+      featured: true,
+    },
+    {
       title: 'Getting Started',
       description: 'Build your VibeKeypad from scratch. Hardware requirements, assembly, firmware flashing, and editor configuration.',
       href: '/docs/getting-started',
@@ -67,20 +74,14 @@ export default function DocsIndex() {
         <div className="mt-16 p-8 rounded-2xl bg-gradient-to-br from-accent/10 to-accent-2/10 border border-accent/20">
           <h2 className="text-2xl font-bold mb-3">Need help?</h2>
           <p className="text-muted text-lg mb-4">
-            Can't find what you're looking for? Join our community or open an issue on GitHub.
+            Can&apos;t find what you&apos;re looking for? Open an issue on GitHub.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent text-white font-semibold hover:scale-105 transition-transform"
-            >
-              💬 Discord Community
-            </a>
             <a
               href="https://github.com/menemy/vibekeypad/issues"
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-line text-fg font-semibold hover:scale-105 transition-transform"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent text-white font-semibold hover:scale-105 transition-transform"
             >
               🐛 Report an Issue
             </a>

@@ -28,41 +28,42 @@ When prompted by Chrome, select your device and click **Connect**.
 
 ### 4. Configure Your Key Combinations
 
-VibeKeypad supports **6 different key combinations** by default.
+VibeKeypad supports **6 keys** that you can map to any shortcuts. See our preset guides for recommended configurations:
 
-#### Basic Configuration (6 Keys)
+- [Claude Code Preset](./claude-code-preset.html)
+- [Cursor Agent Preset](./cursor-agent-preset.html)
 
-Map each key to your desired action:
+#### Claude Code Example
 
-| Key | Suggested Mapping | Action |
-|-----|------------------|---------|
-| **Key 1** | `Tab` | Accept AI suggestion |
-| **Key 2** | `Alt + ]` | Next suggestion |
-| **Key 3** | `Cmd/Ctrl + Shift + A` | Ask AI |
-| **Key 4** | `Alt + R` | Redo/Regenerate |
-| **Key 5** | `Ctrl + R` | Show verbose output |
-| **Key 6** | `Fn + Fn` | Push-to-talk voice |
+| Key | Icon | Shortcut | Action |
+|-----|------|----------|--------|
+| **Key 1** | 🤙🏻 | `Enter` | Yes / Accept |
+| **Key 2** | ⏭ | `2` | Yes, don't ask again |
+| **Key 3** | 🙅‍♂️ | `3 + ESC` | No / Reject |
+| **Key 4** | ❌ | `Ctrl + C` | Stop |
+| **Key 5** | 👀 | `Ctrl + O` | Full output |
+| **Key 6** | 🎤 | `Cmd + D` | Dictate |
 
-#### Advanced: Using Layers (10 Combinations)
+#### Cursor Agent Example
 
-Enable layers to unlock **10 different combinations** using just 6 physical keys:
-
-1. In SayoDevice, navigate to **Layers** settings
-2. Assign **one key as a layer modifier** (e.g., Key 6)
-3. Configure alternative actions for keys 1-5 when the modifier is held
-
-This gives you 10 unique actions with 6 keys!
+| Key | Icon | Shortcut | Action |
+|-----|------|----------|--------|
+| **Key 1** | ✅ | `Enter` | Apply |
+| **Key 2** | ⏭ | `Shift + Enter` | Apply + Allowlist |
+| **Key 3** | 🙅‍♂️ | `ESC` | Skip |
+| **Key 4** | ❌ | `Ctrl + C` | Cancel |
+| **Key 5** | 💭 | `Win + .` | Mode toggle |
+| **Key 6** | 🎤 | `Shift + Win + Space` | Dictate |
 
 ### 5. Print and Install Icons
 
-1. Download the icon sheet from the [GitHub repository](https://github.com/menemy/vibekeypad)
-2. Print on waterproof vinyl sticker paper (12×12mm per icon)
-3. Cut the icons to size
-4. Remove keycaps from your switches
-5. Apply icons to the top of each keycap
-6. Reinstall keycaps
+1. Print icons on regular paper (12×12mm per icon)
+2. Cut the icons to size
+3. Open transparent keycaps and slide icons inside
+4. Snap keycaps back together
+5. Press onto switches
 
-> **Pro Tip:** Use a Cricut or Silhouette cutting machine for precise cuts, or carefully cut by hand with a hobby knife and ruler.
+> **Tip:** You can use emoji from the tables above or create your own icons.
 
 ### 6. Start Using Your Keypad
 
@@ -77,41 +78,18 @@ After configuration, your VibeKeypad **works as a standard keyboard**:
 
 Here's how a typical AI coding session works with VibeKeypad:
 
-1. **Claude suggests code** → Press Key 1 to accept
-2. **Want to see alternatives?** → Press Key 2 for next suggestion
-3. **Need clarification?** → Press Key 3 to open chat
-4. **Not quite right?** → Press Key 4 to regenerate
-5. **Need more detail?** → Press Key 5 for verbose mode
-6. **Voice input faster?** → Hold Key 6 and speak
+1. **Claude suggests a change** → Press 🤙🏻 to accept
+2. **Multiple similar changes?** → Press ⏭ to accept all
+3. **Wrong suggestion?** → Press 🙅‍♂️ to reject
+4. **Going wrong direction?** → Press ❌ to stop
+5. **Need details?** → Press 👀 for full output
+6. **Complex explanation?** → Press 🎤 and speak
 
 All without touching your mouse or main keyboard!
-
-## Troubleshooting
-
-### Device Not Detected
-
-- Try a different USB port
-- Use a data-capable USB cable (not just charging cables)
-- Restart Chrome and reconnect
-- Grant USB permissions when Chrome prompts
-
-### Keys Not Responding
-
-- Make sure you saved your configuration in SayoDevice
-- Disconnect and reconnect the device
-- Check that the application you're using accepts the key combinations
-- Test in a text editor to verify keys are sending correctly
-
-### Firmware Update Failed
-
-- Do not disconnect during update
-- Try a different USB cable
-- Connect directly to computer (not through a hub)
-- Download and manually flash firmware if web update fails
 
 ## What's Next?
 
 - [Enable Bluetooth](./enable-bluetooth.html) for wireless operation
-- Browse [community presets](./claude-code-preset.html) for different editors
+- Browse presets: [Claude Code](./claude-code-preset.html) | [Cursor Agent](./cursor-agent-preset.html)
 - Customize icons and create your own layouts
 - Share your setup with **#VibeKeypad**

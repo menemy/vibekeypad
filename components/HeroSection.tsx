@@ -8,9 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 export default function HeroSection() {
   const sectionRef = useRef(null)
   const stickyRef = useRef(null)
-  const
-
-      videoRef = useRef<HTMLVideoElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
   const [videoPlayed, setVideoPlayed] = useState(false)
 
   useEffect(() => {

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Claude Code Icons - VibeKeypad</title>
+  <style>
+    @media print {
+      @page { margin: 10mm; }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      padding: 20px;
+    }
+    h1 { font-size: 16px; margin-bottom: 5px; }
+    h2 { font-size: 12px; margin: 15px 0 10px 0; color: #666; }
+    p { font-size: 10px; color: #999; margin-bottom: 15px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 14mm);
+      gap: 2mm;
+      margin-bottom: 15px;
+    }
+    .key {
+      width: 14mm;
+      height: 12mm;
+      border: 0.5px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8mm;
+      line-height: 1;
+      box-sizing: border-box;
+    }
+    .key-labeled {
+      width: 14mm;
+      height: 12mm;
+      border: 0.5px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 1mm;
+    }
+    .key-labeled .icon {
+      font-size: 6mm;
+      line-height: 1;
+    }
+    .key-labeled .text {
+      font-size: 1.8mm;
+      color: #333;
+      margin-top: 0.5mm;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 4px;
+      font-family: monospace;
+      color: #999;
+      line-height: 1.1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Claude Code Icons</h1>
+  <p>Print at 100% scale (no scaling). Cut 14×12mm rectangles.</p>
+
+  <h2>Icons only (for keycaps)</h2>
+  <div class="grid">
+    <div class="key">🤙🏻</div>
+    <div class="key">⏭</div>
+    <div class="key">🙅‍♂️</div>
+    <div class="key">❌</div>
+    <div class="key">👀</div>
+    <div class="key">🎤</div>
+  </div>
+
+  <h2>Icons with labels (for reference)</h2>
+  <div class="grid">
+    <div class="key-labeled"><span class="icon">🤙🏻</span><span class="text">Yes</span></div>
+    <div class="key-labeled"><span class="icon">⏭</span><span class="text">Yes, all</span></div>
+    <div class="key-labeled"><span class="icon">🙅‍♂️</span><span class="text">No</span></div>
+    <div class="key-labeled"><span class="icon">❌</span><span class="text">Stop</span></div>
+    <div class="key-labeled"><span class="icon">👀</span><span class="text">Output</span></div>
+    <div class="key-labeled"><span class="icon">🎤</span><span class="text">Dictate</span></div>
+  </div>
+
+  <pre class="footer">
+##     ##   #######   ######    #######  ##   ##  #######  ##   ##  ######     ###    #####
+##     ##     ###     ##   ##   ##       ##  ##   ##       ##   ##  ##   ##   ## ##   ##  ##
+##     ##     ###     ######    #####    #####    #####     #####   ######   ##   ##  ##   ##
+ ##   ##      ###     ##   ##   ##       ##  ##   ##         ###    ##       #######  ##   ##
+  ## ##       ###     ##   ##   ##       ##  ##   ##         ###    ##       ##   ##  ##  ##
+   ###      #######   ######    #######  ##   ##  #######    ###    ##       ##   ##  #####
+  </pre>
+</body>
+</html>

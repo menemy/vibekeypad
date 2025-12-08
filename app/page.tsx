@@ -140,7 +140,7 @@ export default function Home() {
               <div className="text-center">
                 <div className="text-6xl mb-6">🚀</div>
                 <h3 className="text-2xl font-semibold mb-3">3. Start using</h3>
-                <p className="text-muted text-lg">That's it! Your keypad is ready. Yes, No, Stop — all at your fingertips.</p>
+                <p className="text-muted text-lg">That&apos;s it! Your keypad is ready. Yes, No, Stop — all at your fingertips.</p>
               </div>
             </div>
           </div>
@@ -149,38 +149,80 @@ export default function Home() {
         {/* Presets Section */}
         <section id="presets" className="py-20 bg-bg">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight">
               Starter presets.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <article className="p-8 rounded-3xl bg-card border border-line">
-                <h4 className="text-xl font-semibold mb-4">Claude Code (macOS, US)</h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">🤙🏻 Yes → Enter</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">⏭ Yes and do not ask → 2</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">🙅‍♂️ No → 3 + ESC</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">❌ Stop → Ctrl + ESC + C</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">👀 See full output → Ctrl + O</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">🎤︎ Dictate → Win + D</span>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+              {/* Claude Code Preset */}
+              <div>
+                <a href="docs/claude-code-preset.html" className="block text-2xl font-semibold mb-6 text-center hover:text-accent transition-colors">Claude Code</a>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">🤙🏻</div>
+                    <p className="text-sm text-muted">Yes</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">⏭</div>
+                    <p className="text-sm text-muted">Yes, all</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">🙅‍♂️</div>
+                    <p className="text-sm text-muted">No</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">❌</div>
+                    <p className="text-sm text-muted">Stop</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">👀</div>
+                    <p className="text-sm text-muted">Full output</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">🎤</div>
+                    <p className="text-sm text-muted">Dictate</p>
+                  </div>
                 </div>
-              </article>
-              <article className="p-8 rounded-3xl bg-card border border-line opacity-50 pointer-events-none">
-                <h4 className="text-xl font-semibold mb-4 text-muted">Cursor (Coming Soon)</h4>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">✅ Accept → Tab</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">🔄 Next → ⌥ ]</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">💬 Ask → Ctrl ⇧ L</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">♻️ Re‑gen → Alt \</span>
-                  <span className="px-3 py-1.5 rounded-lg border border-line bg-white/[0.04] text-sm text-muted">🎤 Voice → Fn Fn</span>
+              </div>
+
+              {/* Cursor Agent Preset */}
+              <div>
+                <a href="docs/cursor-agent-preset.html" className="block text-2xl font-semibold mb-6 text-center hover:text-accent transition-colors">Cursor Agent</a>
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">✅</div>
+                    <p className="text-sm text-muted">Apply</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">⏭</div>
+                    <p className="text-sm text-muted">Allowlist</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">🙅‍♂️</div>
+                    <p className="text-sm text-muted">Skip</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">❌</div>
+                    <p className="text-sm text-muted">Cancel</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">💭</div>
+                    <p className="text-sm text-muted">Mode</p>
+                  </div>
+                  <div className="p-4 rounded-2xl bg-card border border-line text-center">
+                    <div className="text-4xl mb-2">🎤</div>
+                    <p className="text-sm text-muted">Dictate</p>
+                  </div>
                 </div>
-              </article>
-              <article className="p-8 rounded-3xl bg-card border border-line">
-                <h4 className="text-xl font-semibold mb-4">Community presets</h4>
-                <p className="text-muted mb-6">Got a layout for Continue.dev, JetBrains or Linux?</p>
-                <a href="https://github.com/menemy/vibekeypad/discussions/categories/ideas" target="_blank" rel="noopener" className="inline-flex items-center gap-2 text-accent hover:underline">
-                  ➕ Submit a new preset
-                </a>
-              </article>
+              </div>
+            </div>
+
+            {/* Community */}
+            <div className="text-center">
+              <p className="text-muted mb-4">Have your own preset?</p>
+              <a href="https://github.com/menemy/vibekeypad/discussions/categories/ideas" target="_blank" rel="noopener" className="inline-flex items-center gap-2 text-accent hover:underline font-medium">
+                ➕ Submit a new preset
+              </a>
             </div>
           </div>
         </section>
@@ -189,9 +231,13 @@ export default function Home() {
         <section id="get" className="py-16 bg-bg">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="p-12 rounded-3xl bg-gradient-to-br from-accent/15 to-accent-2/15 border border-line text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">DIY now. Buy later?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+                <a href="docs/getting-started.html" className="hover:text-accent transition-colors">DIY now.</a>
+                {' '}
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSesbYZSYzOf_xX1wBvbnHC49dl0MvYEUenVhKOgMxfFkeRIeA/viewform?usp=dialog" target="_blank" rel="noopener" className="hover:text-accent transition-colors">Buy later?</a>
+              </h2>
               <p className="text-xl text-muted mb-8 max-w-3xl mx-auto">
-                VibeKeypad is a DIY project for now. If you'd like a ready‑to‑use kit, join the interest list.
+                VibeKeypad is a DIY project for now. If you&apos;d like a ready-to-use kit, join the interest list.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSesbYZSYzOf_xX1wBvbnHC49dl0MvYEUenVhKOgMxfFkeRIeA/viewform?usp=dialog" target="_blank" rel="noopener" className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-accent text-white text-base font-semibold transition-transform hover:scale-105">
